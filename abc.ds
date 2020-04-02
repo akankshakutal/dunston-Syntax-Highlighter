@@ -1,0 +1,32 @@
+start
+jmp 200
+
+
+func fact
+cmp c,0
+jne 70
+ret
+push b
+sub b,1
+add d,a
+cmp b,1
+jne 80
+sub c,1
+pop b
+sub b,1
+mov a,d
+call fact
+ret
+
+
+mov a,6
+push a
+sub a,1
+mov b,a
+sub a,1
+mov c,a
+pop a
+mov d,a
+call fact
+prn d
+stop

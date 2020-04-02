@@ -1,0 +1,35 @@
+{
+    "name": "dunston",
+    "displayName": "Dunston",
+    "description": "",
+    "publisher": "brain",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "Dunston",
+                "aliases": [
+                    "dunston",
+                    "Dunston"
+                ],
+                "extensions": [
+                    ".ds"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "Dunston",
+                "scopeName": "source.ds",
+                "path": "./syntaxes/Dunston.tmLanguage.json"
+            }
+        ]
+    }
+}

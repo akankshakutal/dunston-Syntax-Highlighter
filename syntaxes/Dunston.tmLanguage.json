@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "dunston",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#support"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#string"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.Dunston",
+					"match": "\\b(start|stop)\\b"
+				},
+				{
+					"name": "keyword.operator.new",
+					"match": "\\b(add|sub|push|pop)\\b"
+				}
+			]
+		},
+		"support": {
+			"patterns": [
+				{
+					"name": "support.function",
+					"match": "\\b(func|ret|call)\\b"
+				},
+				{
+					"name": "support.variable",
+					"match": "\\b(jmp|jne)\\b"
+				}
+			]
+		},
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "[0-9]"
+				}
+			]
+		},
+		"string": {
+			"patterns": [
+				{
+					"name": "string.unquoted",
+					"match": "\\b(mov|prn)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.ds"
+}
