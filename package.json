@@ -2,8 +2,12 @@
     "name": "dunston",
     "displayName": "Dunston",
     "description": "",
-    "publisher": "brain",
+    "publisher": "akankshakutal",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/akankshakutal/dunston-Syntax-Highlighter.git"
+    },
     "engines": {
         "vscode": "^1.43.0"
     },

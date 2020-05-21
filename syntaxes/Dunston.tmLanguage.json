@@ -6,9 +6,6 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#support"
-		},
-		{
 			"include": "#constant"
 		},
 		{
@@ -20,23 +17,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.Dunston",
-					"match": "\\b(start|stop)\\b"
-				},
-				{
-					"name": "keyword.operator.new",
-					"match": "\\b(add|sub|push|pop)\\b"
-				}
-			]
-		},
-		"support": {
-			"patterns": [
-				{
-					"name": "support.function",
-					"match": "\\b(func|ret|call)\\b"
-				},
-				{
-					"name": "support.variable",
-					"match": "\\b(jmp|jne)\\b"
+					"match": "\\b(start|stop|add|sub|push|pop|func|ret|call|jmp|jne|cmp|mov)\\b"
 				}
 			]
 		},
@@ -52,7 +33,7 @@
 			"patterns": [
 				{
 					"name": "string.unquoted",
-					"match": "\\b(mov|prn)\\b"
+					"match": "[A-z]"
 				}
 			]
 		}
